@@ -259,8 +259,9 @@
                 let chatHistory = [{ role: "user", parts: [{ text: fullPrompt }] }];
                 const payload = { contents: chatHistory };
                 // The API key is left empty as it will be handled by the environment.
-                const apiKey = ""; 
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.APIKEY}`;
+                    const apiKey = "AIzaSyD5jmFnPg8RGOZ9xLHFdGofpaH2BTu75R4"; 
+
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
                 // Fetch the story from the Gemini API
                 const response = await fetch(apiUrl, {
